@@ -19,11 +19,11 @@ MongoDB session store for [Connect](https://github.com/senchalabs/connect) and [
 * Support Node.js 4, 6 and 8
 * Support [MongoDB](https://www.mongodb.com/) `>= 3.0`
 
-For extended compatibility, see previous versions.
+有关扩展兼容性，请参阅先前版本.
 
-## Usage
+## 用法
 
-### Express or Connect integration
+### 快速或连接集成
 
 Express `4.x`, `5.0` and Connect `3.x`:
 
@@ -48,13 +48,13 @@ app.use(express.session({
 }));
 ```
 
-For Connect `1.x` and `2.x`, just replace `express` by `connect`.
+对于Connect`1.x`和`2.x`，只需用`connect`替换`express`即可。
 
 ### Connection to MongoDB
 
-In many circumstances, `connect-mongo` will not be the only part of your application which need a connection to a MongoDB database. It could be interesting to re-use an existing connection.
+在许多情况下，`connect-mongo`将不是您的应用程序中唯一需要连接到MongoDB数据库的部分。 重新使用现有连接可能会很有趣.
 
-Alternatively, you can configure `connect-mongo` to establish a new connection.
+或者，您可以配置`connect-mongo`以建立新连接。
 
 #### Re-use a Mongoose connection
 
@@ -78,8 +78,8 @@ app.use(session({
 
 #### Re-use a native MongoDB driver connection (or a promise)
 
-In this case, you just have to give your `Db` instance to `connect-mongo`.
-If the connection is not opened, `connect-mongo` will do it for you.
+在这种情况下，您只需将`Db`实例赋予`connect-mongo`。
+如果未打开连接，`connect-mongo`将为您完成。
 
 ```js
 /*
